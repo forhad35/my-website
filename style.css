@@ -459,7 +459,9 @@ h1 {
 .arrow {
     font-size: 2rem;
 }
-
+.card-body {
+    cursor: pointer;
+}
 .clint-wrapper {
     display: flex;
     flex-flow: row wrap;
