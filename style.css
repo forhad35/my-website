@@ -1,0 +1,593 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0% 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex: 1;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0% 8%;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.navbr {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+    margin: 30px 0;
+}
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: absolute;
+    top: 40px;
+    background: #ddd;
+    left: 0px;
+    display: block;
+    z-index: 100;
+    transition: all 0.3s;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+nav ul li:hover a {
+    color: #ff5ea2;
+}
+
+ul.submenu li {
+    padding: 9px 7px;
+    width: 150px;
+    text-align: left;
+    margin: 0% 6%;
+    overflow: hidden;
+}
+
+ul.submenu li:hover a {
+    color: #fff;
+}
+
+ul.submenu li a {
+    font-size: 16px;
+}
+
+nav ul li:hover .submenu {
+    transform: scaleY(1);
+}
+
+
+/*---------- sllider&blog------------------------------------*/
+
+.blogSection h1 {
+    margin-top: 5%;
+}
+
+.slider {
+    width: 100%;
+    animation: sliderbg;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    overflow: hidden;
+    min-height: 79vh;
+    background: url(https://th.bing.com/th/id/OIP.Cep_1YLkiVcswqucs3jVRQHaEK?pid=ImgDet&rs=1);
+    display: list-item;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider h1 {
+    padding-top: 20px;
+    color: #fff;
+}
+
+.slider p {
+    font-size: 1rem;
+    color: #fff;
+    text-align: justify;
+    padding: 0% 10% 10% 10%;
+    line-height: 24px;
+}
+
+@keyframes sliderbg {
+    0% {
+        background: url(https://th.bing.com/th/id/OIP.3saz9OJ_xtDRnJcUgnePhQHaE8?w=241&h=180&c=7&o=5&dpr=1.25&pid=1.7);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    20% {
+        background: url(https://th.bing.com/th/id/OIP.XYU87iTNRpbzUyx0TScipwHaD4?w=306&h=180&c=7&o=5&dpr=1.25&pid=1.7);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    40% {
+        background: url(https://th.bing.com/th/id/OIP.28LsFTVK8EeoIpnAd5Tp3gHaEK?w=309&h=180&c=7&o=5&dpr=1.25&pid=1.7);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    60% {
+        background: url(https://th.bing.com/th/id/OIP.l_xUOLxsRG_iSSk7kMnI1wHaFi?w=222&h=180&c=7&o=5&dpr=1.25&pid=1.7);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    80% {
+        background: url(https://th.bing.com/th/id/OIP.t82Pf1nDA0Dyo_VZvNOppAHaEx?w=258&h=180&c=7&o=5&dpr=1.25&pid=1.7);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100% {
+        background: url(https://th.bing.com/th/id/OIP.VlLBJ9lZI5CqktQJ32Qp-QHaEK?w=300&h=180&c=7&o=5&dpr=1.25&pid=1.7);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+/* -------------------------------- product section -------------------------------*/
+
+.row {
+    display: flex;
+    padding-top: 5%;
+}
+
+.col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h2 {
+    font-size: 3.3rem;
+}
+
+.col-1 h3 {
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0px 10px;
+}
+
+.col-1 p {
+    font-size: 16px;
+    color: #b7b7b7;
+    font-weight: 100;
+}
+
+.col-1 h4 {
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+button {
+    width: 140px;
+    border: 0px;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button img {
+    width: 30px;
+    display: none;
+    color: #000;
+}
+
+button:hover img {
+    display: block;
+}
+
+button:hover {
+    width: 160px;
+    justify-content: space-evenly;
+}
+
+.col-1::after {
+    content: "";
+    width: 10px;
+    background: linear-gradient(45deg, #ff469fa3, #ff6062);
+    position: absolute;
+    top: 8px;
+    left: -40px;
+    height: 57%;
+}
+
+.col-2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-basis: 60%;
+}
+
+.controller {
+    width: 90%;
+}
+
+.colorBox {
+    height: 100%;
+    width: 80%;
+    background: linear-gradient(#f42080, #fa3639);
+    border-radius: 20px 0px 0px 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transform: translateX(150px);
+}
+
+.add-btn img {
+    width: 35px;
+    margin-bottom: 5px;
+}
+
+.add-btn {
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/*------------------------------- Our services ------------------------------*/
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background: #ddd;
+    padding: 3%;
+}
+
+.service_div h3 {
+    margin-bottom: 4%;
+    color: #433232;
+}
+
+.service_icon {
+    width: 100px;
+    margin: auto;
+}
+
+.service_div {
+    width: 30%;
+    text-align: center;
+}
+
+
+/* ---------------------------- our project area -------------------------------------*/
+
+.secTitle p {
+    text-align: center;
+    margin: 2% 0%;
+}
+
+section#project {
+    background: #f5f6f6;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.singleBox_wraper {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+    flex: 1;
+}
+
+.project_singleBox {
+    width: 30%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.project_singleBox {
+    position: relative;
+}
+
+.project_text {
+    position: absolute;
+    top: unset;
+    bottom: 0px;
+    left: 0px;
+    width: 329px;
+    color: white;
+    background: linear-gradient(to top, black, transparent);
+    padding: 40px 17px;
+    padding-right: 7px;
+    padding-bottom: 0px;
+}
+
+.project_text .text span {
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.project_text .text h3 {
+    margin: 5px 0px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    word-spacing: 1px;
+}
+
+.project_singleBox a {
+    color: white;
+    font-size: 16px;
+    display: block;
+    font-weight: 500;
+    transform: translateX(-98px);
+}
+
+.project_text .text {
+    margin-bottom: 8px;
+    width: 255px;
+    padding-left: 15px;
+}
+
+.project_singleBox:hover .project_text {
+    transform: translateY(-25px 10px);
+    background: linear-gradient(to top, black, #0000000a 200px);
+    transition: .300s ease;
+    padding-bottom: 70px;
+}
+
+.project_singleBox:hover .project_text a {
+    transform: translateX(15px);
+    display: block;
+    transition: .2s cubic-bezier(0, 0, 1, 1.14);
+    transition-delay: .300s;
+}
+
+
+/*--------------------------- start about us section ------------------------------------*/
+
+section.aboutUs {
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section.aboutUs h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+
+h1 span {
+    color: #ffa603;
+}
+
+h1 {
+    text-align: center;
+    margin: 2% 0%;
+    font-size: 2rem;
+}
+
+.txtContent {
+    width: 60%;
+    text-align: justify;
+    color: #624545cc;
+}
+
+.aboutContentWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+
+/* ---------------------------  clint area  ------------------------------------------------------------*/
+
+.clint_section {
+    display: flex;
+    flex-direction: column;
+}
+
+.arrow {
+    font-size: 2rem;
+}
+
+.clint-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/*------------------- start footer content --------------------------------------------------*/
+
+footer {
+    background-color: #000;
+    width: 100%;
+}
+
+.footer {
+    overflow: hidden;
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding-bottom: 2%;
+    flex-wrap: wrap;
+}
+
+.footer-txt p {
+    color: rgba(255, 255, 255, 0.747);
+    text-align: center;
+}
+
+.footer-txt {
+    padding: 5px;
+}
+
+.social_icon .icon {
+    height: 20px;
+    width: 20px;
+    margin: 0px 20px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.icon a {
+    color: #fff;
+}
+
+.icon:hover a {
+    color: red;
+}
+
+.social_icon .icon:hover {
+    background: white;
+}
+
+
+/*------------------------------------------- mobile css section -------------------------------- */
+
+@media screen and (max-width:800px) {
+    .container {
+        display: flex;
+    }
+    header {
+        position: unset;
+    }
+    .menu-icon {
+        display: block;
+    }
+    #menulist {
+        overflow: hidden;
+        transition: all 0.5s;
+        transform-origin: top;
+        background: linear-gradient(45deg, #ff469fa3, #ff6062);
+        position: absolute;
+        top: 72px;
+        right: 0px;
+        z-index: 100;
+    }
+    #menulist li {
+        display: block;
+        position: relative;
+        margin-top: 10px;
+        padding: 5px 10px;
+        text-align: center;
+    }
+    #menulist li:last-child {
+        padding-bottom: 20px;
+    }
+    #menulist li:first-child {
+        padding-top: 20px;
+    }
+    #menulist li a {
+        color: #ffffffad;
+    }
+    #menulist li:hover a {
+        color: #fff;
+    }
+    .submenu {
+        display: none;
+    }
+    .row {
+        flex-direction: column-reverse;
+        margin: 50px 0px;
+    }
+    /*----------------- our services --------*/
+    .wrapper {
+        flex-direction: column;
+    }
+    .service_div {
+        margin: auto;
+        width: 80%;
+    }
+    /* ---------------- our project area -----------------*/
+    .singleBox_wraper {
+        display: flex;
+        flex-flow: column wrap;
+        flex: 1;
+    }
+    .project_singleBox {
+        width: 80%;
+    }
+    /* ------------------------- clint area -----------------*/
+    .clint {
+        margin: auto !important;
+    }
+    /* ------------------------- footer area ---------------------------*/
+    .social_icon {
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .footer-txt {
+        font-size: 14px;
+        padding: 0px 10px;
+    }
+}
